@@ -1,4 +1,4 @@
-/* ===== Загальні стилі ===== */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
 
 .project-container {
   width: 100%;
-  max-width: 420px; /* зручно для мобіли */
+  max-width: 420px; 
   margin: 12px auto;
   padding: 14px;
   background: #fff;
@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ===== Зображення ===== */
+
 .project-image-wrapper {
   position: relative;
   border-radius: 10px;
@@ -42,7 +42,7 @@ body {
   font-weight: 600;
 }
 
-/* ===== Локація ===== */
+
 .project-location {
   margin-top: 10px;
   font-size: 0.85rem;
@@ -50,11 +50,11 @@ body {
   text-align: center;
 }
 
-/* ===== Кнопка "Назад" ===== */
+
 .back-button {
   display: block;
   width: 100%;
-  margin: 12px 0; /* 👈 зменшив відступ */
+  margin: 10px 0; 
   text-decoration: none;
   color: #333;
   font-weight: 600;
@@ -70,7 +70,7 @@ body {
   background-color: #eee;
 }
 
-/* ===== Контент ===== */
+
 .project-content {
   margin: 16px 0;
 }
@@ -93,14 +93,14 @@ body {
   margin-bottom: 6px;
 }
 
-/* ===== Деталі ===== */
+
 .project-details p {
   margin: 5px 0;
   color: #333;
   font-size: 0.85rem;
 }
 
-/* ===== Кнопки ===== */
+
 .btn {
   display: inline-block;
   padding: 10px;
@@ -125,23 +125,17 @@ body {
   background-color: #0056b3;
 }
 
-/* ===== Для трохи більших екранів (планшети) ===== */
-@media (min-width: 480px) {
-  .project-container {
-    max-width: 520px;
-    margin: 20px auto;
-    padding: 18px;
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 18px;
   }
-
-  .project-title {
-    font-size: 1.4rem;
+  .name {
+    font-size: 16px;
   }
-
-  .project-advantages {
-    font-size: 0.95rem;
+  .text-in {
+    font-size: 13px;
   }
-
-  .project-details p {
-    font-size: 0.9rem;
+  .bth {
+    padding: 10px;
   }
 }
