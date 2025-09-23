@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="ут">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Medical Resort</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./index.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phoenix Medical Resort</title>
+  <link rel="stylesheet" href="./Card.css" />
 </head>
 <body>
-    <div class="container">
-        <img src="./image/f6510aa02d5f049ed7d2e40e2a55ba6c1c1c0f8c (1).png" alt="phoenix" class="img">
-        <p class="year">до 15% річних USD</p>
-        <p class="location">смт. Східниця, Львівська область</p>
-        <button class="bthn"><a href="./index.html">назад</a></button>
-        <div class="advantages">
-            <p class="hero">Phoenix Medical Resort</p>
-            <ol>
-                <li><p>Власні заводи — нижча собівартість будівництва</p></li>
-                <li><p>Успішний кейс у Буковелі — $155 млн виплат інвесторам</p></li>
-                <li><p>Безпечна туристична локація — Східниця</p></li>
-            </ol>
-        </div>
-        <div class="space">
-            <p>Керуюча компанія: PHOENIX</p>
-            <p>Вартість: $2187 /м²</p>
-            <p>Площа: котеджі від 52 до 64 м²</p>
-            <p>Зростання вартості: +25-30% на рік</p>
-            <p>Запуск: 4-й квартал 2027 р.</p>
-        </div>
-        <button class="invest">інвестувати</button>
+  <div class="project-container">
+
+    <!-- Зображення проєкту -->
+    <div class="project-image-wrapper">
+      <img src="./image/f6510aa02d5f049ed7d2e40e2a55ba6c1c1c0f8c (1).png" alt="Phoenix Medical Resort" class="project-image" />
+      <div class="project-badge">до 15% річних USD</div>
     </div>
+
+    <!-- Локація -->
+    <p class="project-location">смт. Східниця, Львівська область</p>
+
+    <!-- Кнопка "назад" -->
+    <a href="./index.html" class="btn back-button">Назад</a>
+
+    <!-- Назва + переваги -->
+    <div class="project-content">
+      <h1 class="project-title">Phoenix Medical Resort</h1>
+      <ol class="project-advantages">
+        <li>Власні заводи — нижча собівартість будівництва</li>
+        <li>Успішний кейс у Буковелі — $155 млн виплат інвесторам</li>
+        <li>Безпечна туристична локація — Східниця</li>
+      </ol>
+    </div>
+
+    <!-- Основна інформація -->
+    <div class="project-details">
+      <p><strong>Керуюча компанія:</strong> PHOENIX</p>
+      <p><strong>Вартість:</strong> $2187 /м²</p>
+      <p><strong>Площа:</strong> котеджі від 52 до 64 м²</p>
+      <p><strong>Зростання вартості:</strong> +25-30% на рік</p>
+      <p><strong>Запуск:</strong> 4-й квартал 2027 р.</p>
+    </div>
+
+    <!-- Кнопка "Інвестувати" -->
+    <button class="btn invest-button">Інвестувати</button>
+
+  </div>
 </body>
 </html>
