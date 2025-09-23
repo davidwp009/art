@@ -1,61 +1,53 @@
-// Fetch JSON data for the resorts
-fetch('progects.json')
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById('cards-container');
+// document.addEventListener('DOMContentLoaded', function () {
+//     fetch('./projects.json')
+//         .then(response => response.json())
+//         .then(projects => {
+//             const container = document.getElementById('cards-container');
 
-        // Iterate through each resort and create a card
-        data.resorts.forEach(resort => {
-            const card = createCard(resort);
-            container.appendChild(card);
-        });
-    })
-    .catch(error => console.error('Error loading data:', error));
+           
+//             projects.forEach(project => {
+//                 const card = document.createElement('div');
+//                 card.classList.add('card');
 
-// Function to create a card dynamically
-function createCard(data) {
-    const card = document.createElement('div');
-    card.classList.add('card');
+                
+//                 const img = document.createElement('img');
+//                 img.src = project.image;  
+//                 img.alt = project.name;
 
-    const image = document.createElement('img');
-    image.src = data.imageUrl;
-    image.alt = data.title;
-    card.appendChild(image);
+                
+//                 const title = document.createElement('h3');
+//                 title.classList.add('card-title');
+//                 title.innerText = project.name;
 
-    const cardContent = document.createElement('div');
-    cardContent.classList.add('card-content');
+                
+//                 const content = document.createElement('div');
+//                 content.classList.add('card-content');
+//                 content.innerHTML = `
+//                     <div class="card-info"><strong>Адреса:</strong> ${project.address}</div>
+//                     <div class="card-info"><strong>Інвестиції від:</strong> ${project.invest_start_from}</div>
+//                     <div class="card-info"><strong>Капіталізація:</strong> ${project.capitalisation}</div>
+//                     <div class="card-info"><strong>Річна ставка:</strong> ${project.profit_percent}</div>
+//                     <div class="card-info"><strong>Планування:</strong> ${project.planning}</div>
+//                     <div class="card-info"><strong>Вартість м2:</strong> ${project.cost}</div>
+//                     <div class="card-info"><strong>Зростання вартості:</strong> ${project.cost_growth}</div>
+//                     <div class="card-info"><strong>Дата запуску:</strong> ${project.project_launch}</div>
+//                     <div class="card-info"><strong>Переваги:</strong><pre>${project.advantages}</pre></div>
+//                 `;
 
-    const title = document.createElement('div');
-    title.classList.add('card-title');
-    title.textContent = data.title;
-    cardContent.appendChild(title);
+                
+//                 const button = document.createElement('a');
+//                 button.classList.add('details-button');
+//                 button.href = '#'; 
+//                 button.innerText = 'Детальніше';
 
-    const info = document.createElement('div');
-    info.classList.add('card-info');
-    info.innerHTML = `
-        <span>Сума інвестицій: ${data.investmentAmount}</span>
-        <span>Капіталізація: ${data.capitalization}</span>
-        <span>Дата відкриття: ${data.openingDate}</span>
-        <span>Річна ставка: ${data.interestRate}</span>
-        <span>Місцезнаходження: ${data.location}</span>
-    `;
-    cardContent.appendChild(info);
+                
+//                 card.appendChild(img);
+//                 card.appendChild(title);
+//                 card.appendChild(content);
+//                 card.appendChild(button);
 
-    const footer = document.createElement('div');
-    footer.classList.add('card-footer');
-    const detailsButton = document.createElement('button');
-    detailsButton.classList.add('details-button');
-    detailsButton.textContent = 'Детальніше';
-    detailsButton.onclick = () => showDetails(data.details); // Show details on button click
-    footer.appendChild(detailsButton);
-
-    card.appendChild(cardContent);
-    card.appendChild(footer);
-
-    return card;
-}
-
-// Function to show detailed information
-function showDetails(details) {
-    alert(details);
-}
+                
+//                 container.appendChild(card);
+//             });
+//         });
+// });

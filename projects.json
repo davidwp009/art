@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "image": "image/f6510aa02d5f049ed7d2e40e2a55ba6c1c1c0f8c (1).png",
         "name": "Phoenix Medical Resort",
         "address": "смт. Східниця, Львівська область",
         "invest_start_from": "від $10 000",
@@ -16,6 +17,7 @@
     },
     {
         "id": 2,
+        "image": "image/d75b6f022962f3cfa6087e40182cab98aa83da6a (1).png",
         "name": "Phoenix Medical Resort 2",
         "address": "смт. Східниця, Львівська область",
         "invest_start_from": "від $10 000",
@@ -30,7 +32,8 @@
         "project_launch": "4-ий квартал 2027"
     },
     {
-        "id": 2,
+        "id": 3,
+        "image": "image/25054abbf94e7f8aec7c6a1d316f8dbd29443f2e (3).png",
         "name": "Phoenix Medical Resort 2",
         "address": "смт. Східниця, Львівська область",
         "invest_start_from": "від $10 000",
