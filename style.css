@@ -1,9 +1,14 @@
-
+.bitter-header {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background: #222;
 }
 
 .container {
@@ -15,110 +20,118 @@ body {
 .app-title {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
   line-height: 1.4;
+  color: white; 
 }
-
 
 .card {
   background: #fff;
-  border-radius: 18px;
+  border-radius: 10px;
   overflow: hidden;
   margin-bottom: 36px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 }
+
 
 .card-image-wrapper {
   position: relative;
+  padding: 10px; 
 }
 
 .card-image {
   width: 100%;
-  display: block;
-  border-radius: 18px 18px 0 0;
   height: 240px;
+  display: block;
+  border-radius: 10px;
   object-fit: cover;
 }
 
-.card-badge {
+
+.card-badge,
+.card-location {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background: white;
-  color: #222;
-  padding: 8px 14px;
+  padding: 8px 12px;
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card-badge {
+  top: 15px;
+  right: 15px;
 }
 
 .card-location {
-  position: absolute;
-  bottom: 14px;
-  right: 14px;
-  background: white;
-  color: #222;
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  bottom: 15px;
+  right: 15px;
+}
+
+.card-badge img,
+.card-location img,
+.btn.card-button img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 
 .card-title {
-  margin: 20px;
-  font-size: 1.35rem;
-  font-weight: 700;
+  margin: 10px 10px 20px;
   color: #333;
+  line-height: 1.5;
+  
+}
+
+
+.w {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.t p, .r p {
+  margin: 0 0 12px 0;
   line-height: 1.5;
 }
 
-
-.card-details {
-  margin: 0 20px 22px;
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+.r p {
+  text-align: right;
 }
 
-.card-details p {
-  margin: 8px 0;
+.o {
+  color: #3b40409c;
+}
+
+.u {
+  color: #101313;
 }
 
 
 .btn.card-button {
-  display: block;
-  margin: 0 20px;
-  padding: 14px;
-  background: grey;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px;
+  background: #C1CFD5;
+  color: #101313;
   text-decoration: none;
+  border-radius: 12px;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 1.4;
+  gap: 6px;
   transition: 0.3s;
+  height: 50px;
 }
 
 .btn.card-button:hover {
   background: #0056b3;
 }
-
-
-/*
-@media (max-width: 480px) {
-  .app-title {
-    font-size: 18px;
-  }
-  .name {
-    font-size: 16px;
-  }
-  .text-in {
-    font-size: 13px;
-  }
-  .bth {
-    padding: 10px;
-  }
-}  */

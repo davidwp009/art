@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -6,34 +5,29 @@ body {
   background: #f5f5f5;
 }
 
-
 .project-container {
   width: 100%;
   max-width: 420px;
-  margin: 12px auto;
+  margin: 10px auto;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   box-sizing: border-box;
+  padding: 10px;
 }
-
-
-.project-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #222;
-  margin: 14px 14px 8px 14px;
-  text-align: left;
-}
-
 
 .project-image-wrapper {
   position: relative;
   width: 100%;
   height: 260px;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0,0,0,0.04);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.invest-img{
+  width: 33px;
+  height: 22px;
 }
 
 .project-image {
@@ -43,76 +37,84 @@ body {
   display: block;
 }
 
-
+/* Кнопки на фото */
 .back-button,
 .project-badge,
 .project-location-overlay {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background: white;
-  color: #222;
+  color: #101313;
   padding: 6px 10px;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   text-decoration: none;
 }
-
 
 .back-button { top: 10px; left: 10px; }
 .project-badge { top: 10px; right: 10px; }
 .project-location-overlay { bottom: 10px; right: 10px; }
 
-.project-content {
-  padding: 12px 14px;
-  text-align: left;
+.back-button img,
+.project-badge img,
+.project-location-overlay img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
 }
 
+/* Переваги */
 .project-content h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 8px;
+  color: #101313;
+  margin-bottom: 12px;
 }
 
 .project-advantages {
-  list-style: decimal inside;
-  margin: 0;
+  list-style: none;
   padding: 0;
-  font-size: 0.9rem;
-  color: #444;
+  margin: 0;
 }
 
 .project-advantages li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  font-weight: 400; /* 🔥 звичайний текст */
+  color: #101313;
 }
 
-
+/* Деталі */
 .project-details {
-  padding: 8px 14px 14px 14px;
+  margin-top: 20px;
   font-size: 0.9rem;
   color: #333;
-  text-align: left;
 }
 
 .project-details p {
-  margin: 6px 0;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
 }
 
-
+/* Кнопка */
 .invest-button {
   display: block;
-  width: calc(100% - 28px);
-  margin: 8px 14px 18px 14px;
+  width: 100%;
+  margin-top: 20px;
   padding: 12px;
-  background: gray; 
-  color: white;
+  background: grey;
+  color: #101313;
   text-align: center;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
+  height: 50px;
 }
 
 .invest-button:active,
