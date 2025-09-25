@@ -51,3 +51,35 @@
 //             });
 //         });
 // });
+// ВСТАВЛЯЙ СВОЇ КАРТИНКИ СЮДИ
+const images = [
+  './image/first_foto.jpg',      // 1 картинка
+  './image/second_foto.jpg',     // 2 картинка
+  './image/third_foto.jpg'       // 3 картинка
+  // додавай свої шляхи
+];
+
+let current = 0;
+
+const imgEl = document.getElementById('slider-img');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+function showImage(index) {
+  imgEl.src = images[index];
+}
+
+prevBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  current = (current - 1 + images.length) % images.length;
+  showImage(current);
+});
+
+nextBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  current = (current + 1) % images.length;
+  showImage(current);
+});
+
+// Початкова картинка
+showImage(current);

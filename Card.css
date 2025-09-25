@@ -5,36 +5,40 @@
 }
 @font-face {
   font-family: 'CyGrotesk';
-  src: url('../fonts/CyGroteskStd-KeyRegular.otf') format('opentype');
+  src: url('fonts/CyGroteskStd-KeyRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'CyGrotesk', sans-serif;
+  font-family: 'CyGrotesk' !important;
   margin: 0;
   padding: 0;
   background: black;
 }
-
+.local{
+  font-size: 10px;
+}
+.back-bth{
+  font-family: "Bitter", serif;
+  font-weight: 700;
+}
 .project-title {
   color: white;
   font-size: 22px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 16px;
 }
-
-.project-container {
-  width: 100%;
-  max-width: 420px;
-  margin: 10px auto;
+ .project-container {
+  max-width: 480px;
+  margin: 10px 16px;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   box-sizing: border-box;
   padding: 10px;
-}
+} 
 
 .project-image-wrapper {
   position: relative;
@@ -65,11 +69,12 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 0px 10px;
+  height: 30px;
   background: white;
   color: #101313;
-  padding: 6px 10px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   text-decoration: none;
@@ -78,16 +83,24 @@ body {
 .back-button {
   top: 10px;
   left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Bitter";
 }
 
 .project-badge {
   top: 10px;
   right: 10px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .project-location-overlay {
   bottom: 10px;
   right: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  height: 28px;
 }
 
 .back-button img {
@@ -213,6 +226,8 @@ body {
 
 hr {
   margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid;
 }
 
 .m {

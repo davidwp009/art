@@ -16,36 +16,32 @@
   <h1 class="project-title bitter-header">Phoenix Medical Resort</h1>
   <div class="project-container">
 
-
-
     <div class="project-image-wrapper">
-      <img src="./image/first_foto.jpg" alt="1" class="project-image" />
+      <!-- ВСТАВЛЯЙ СВОЇ КАРТИНКИ У МАСИВ В JS (дивись нижче) -->
+      <img src="./image/first_foto.jpg" alt="1" class="project-image" id="slider-img"/>
 
-
-      <a href="#" class="slider-arrow left-arrow">
-        <img src="./image/slider_l.png" alt="Назад">
+      <a href="#" class="slider-arrow left-arrow" id="prev-btn">
+        <img src="./image/slider_l.svg" alt="Назад" >
       </a>
-      <a href="#" class="slider-arrow right-arrow">
-        <img src="./image/slaider_r.png" alt="Вперед">
+      <a href="#" class="slider-arrow right-arrow" id="next-btn">
+        <img src="./image/slaider_r.svg" alt="Вперед">
       </a>
-
 
       <a href="./index.html" class="back-button">
-        <img src="./image/back_icon.png" alt="Назад" class="invest-img bitter-header" />
+        <img src="./image/back_icon.svg" alt="Назад" class="back-bth" />
         Назад
       </a>
 
       <div class="project-badge">
-        <img src="./image/percent_icon.png" alt="Відсотки" />
-        до 15% річних USD
+        <img src="./image/percent_icon.svg" alt="Відсотки" />
+        <span class="lable-padding-r">до 15% річних USD</span>
       </div>
 
       <div class="project-location-overlay">
-        <img src="./image/location_icon.png" alt="Локація" class="lokal"/>
-        с. Східниця, Львівська область
+        <img src="./image/location_icon.svg" alt="Локація" class="lokal"/>
+        <span class="lable-padding">с. Східниця, Львівська обл.</span>
       </div>
     </div>
-
 
     <div class="project-content">
       <h2 class="card-title bitter-header">Переваги:</h2>
@@ -61,8 +57,6 @@
         </li>
       </ol>
     </div>
-
-
 
     <ul class="project-details">
       <hr class="lin">
@@ -84,20 +78,12 @@
       </li>
       <hr class="lin">
       <li class="pr-kd">
-        <p class="l bitter-header">Запуск: 4-ий квартал 2027р.</p>
+        <p class="l bitter-header">Запуск проєкту: 4-ий квартал 2027р.</p>
       </li>
     </ul>
 
-    <!-- <p class="bitter-header"><strong>Керуюча компанія:</strong> PHOENIX</p>
-      <p><strong>Вартість:</strong> $2187 /м²</p>
-      <p><strong>Площа:</strong> котеджі від 52 до 64 м²</p>
-      <p><strong>Зростання вартості:</strong> +25-30% на рік</p>
-      <p><strong>Запуск:</strong> 4-ий квартал 2027 р.</p> -->
-
-
-
-    <button class="invest-button bitter-header">Хочу Інвестувати!</button>
+    <button class="invest-button bitter-header">Хочу інвестувати!</button>
   </div>
+  <script src="./script.js"></script>
 </body>
-
 </html>

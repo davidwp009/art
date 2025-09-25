@@ -17,7 +17,10 @@ body {
   padding: 0;
   background: black;
 }
-
+.local{
+  font-size: 10px;
+  font-weight: 400;
+}
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -81,21 +84,25 @@ body {
   align-items: center;
   gap: 6px;
   background: white;
-  padding: 8px 12px;
+  padding: 0px 12px;
   border-radius: 12px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .card-badge {
   top: 15px;
   right: 15px;
+  height: 30px;
 }
 
 .card-location {
   bottom: 16px;
   right: 15px;
+  font-size: 10px;
+  height: 28px;
+
 }
 
 
@@ -193,6 +200,14 @@ hr {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 0;
+  border: none;
+  border-top: 1px solid;
+}
+.lable-padding{
+  padding-top: 1px;
+}
+.lable-padding-r{
+  padding-top: 2px;
 }
 
 @media (max-width: 400px) {
